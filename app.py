@@ -9,7 +9,7 @@ st.set_page_config(
     }
 )
 
-st.write("<h2 style='color:#FF4E88;font-size:37px;'>Accurate Sentiment Analysis in Seconds</h2>",unsafe_allow_html=True)
+st.write("<h2 style='color:#FF4E88;font-size:35px;'>Accurate Sentiment Analysis in Seconds</h2>",unsafe_allow_html=True)
 
 text=st.text_input("Your text here",placeholder="I'm loving it!")
 btn=st.button("Analyze")
