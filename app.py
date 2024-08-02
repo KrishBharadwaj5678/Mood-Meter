@@ -25,11 +25,11 @@ if btn:
                 sentiment=data['sentiment'].lower().split("_")
                 modified_sentiment=" ".join(i.title() for i in sentiment)
 
-                st.write(f"<h2 style='font-size:32px;color:#F4CE14;'>Text: {data['text']}</h2>",unsafe_allow_html=True)
+                st.write(f"<h2 style='color:#F4CE14;'>Text: {data['text']}</h2>",unsafe_allow_html=True)
 
-                st.write(f"<h2 style='font-size:32px;color:#36C2CE;'>Sentiment: {modified_sentiment}</h2>",unsafe_allow_html=True)
+                st.write(f"<h2 style='color:#36C2CE;'>Sentiment: {modified_sentiment}</h2>",unsafe_allow_html=True)
 
-                st.write(f"<h2 style='font-size:32px;color:#FF7F3E;'>Score: {data['score']}</h2>",unsafe_allow_html=True)
+                st.write(f"<h2 style='color:#FF7F3E;'>Score: {data['score']}</h2>",unsafe_allow_html=True)
         except:
             st.error("Network Error 🔌")
     else:
